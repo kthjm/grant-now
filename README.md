@@ -17,8 +17,8 @@ yarn add -D grant-now
 require('grant-now')({
   open: false,
   [provider]: {
-    token: 'XXXXXXXXXX',
-    secret: 'XXXXXXXXXX'
+    token: '...',
+    secret: '...',
   }
 })
 .then(console.log)
