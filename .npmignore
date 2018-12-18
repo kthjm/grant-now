@@ -1,0 +1,11 @@
+.circleci/
+.nyc_output/
+coverage/
+*.js
+*.js.flow
+*.config.js
+*.yml
+*.svg
+*.lock
+.*ignore
+.*config
