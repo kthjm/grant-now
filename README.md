@@ -14,6 +14,8 @@ yarn add -D grant-now
 
 ## Usage
 ```js
+require('dotenv/config')
+
 require('grant-now')({
   open: false,
   [provider]: {
@@ -21,15 +23,23 @@ require('grant-now')({
     secret: '...',
   }
 })
-.then(console.log)
-.catch(console.error)
 ```
 
 #### Options
 - `protocol = 'http'` Prepared for just in case.
 - `port = 7000` Used as base port.
-- `open = true` Open urls for connect by [`opn`](https://github.com/sindresorhus/opn).
+- `open = true` Open connect urls.
 - `[provider]` [grant's provider](https://github.com/simov/grant#configuration) without `callback` property.
+
+#### Result
+```
+Promise<{
+  [provider]: {
+    server,
+    connect_url
+  }
+}>
+```
 
 ## License
 

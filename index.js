@@ -14,12 +14,13 @@ const opn = require('opn')
 
 const PROTOCOL = 'http'
 const PORT = 7000
+const CALLBACK = '/view'
 
 const assign = (objects) => Object.assign({}, ...objects)
 
 const createApp = ({ name, config, ...defaults }) => {
   const app = new Koa()
-  const callback = '/view'
+  const callback = CALLBACK
   const sessionKey = `grant_now:sess:${name}` // !
 
   const session = Session({ key: sessionKey, maxAge: 'session', signed: false }, app)
@@ -48,12 +49,12 @@ module.exports = ({
     const host = `localhost:${port}`
     const result = {
       name,
-      url: `${protocol}://${host}/connect/${name}`,
+      connect_url: `${protocol}://${host}/connect/${name}`,
       server: undefined,
     }
 
-    console.log(`- ${result.url}`)
-    if (open) opn(result.url, { wait: false })
+    console.log(`- ${result.connect_url}`)
+    if (open) opn(result.connect_url, { wait: false })
 
     return new Promise(resolve =>
       result.server = createApp({ name, config, protocol, host }).listen(port, resolve)

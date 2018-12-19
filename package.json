@@ -1,6 +1,6 @@
 {
   "name": "grant-now",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": "kthjm/grant-now",
   "author": "kthjm <toxictoxer@gmail.com>",
   "license": "MIT",
@@ -10,13 +10,13 @@
     "index.js"
   ],
   "keywords": [
+    "grant",
     "oauth",
     "oauth2",
     "openid",
     "openid-connect",
     "authentication",
     "authorization",
-    "grant",
     "koa"
   ],
   "nyc": {
