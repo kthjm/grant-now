@@ -8,8 +8,8 @@ const opn = require('opn')
 /**
  * Why build server by provider?
  * grant@4.2.2
- * - https://github.com/simov/grant/blob/master/lib/consumer/koa2.js?fbclid=IwAR0iqemny9Kyeb-9A9OApOpIYkIyHKg6jwKgSoEbLG2KfgmtyGKZINqUn4U#L30-L63
- * - https://github.com/simov/grant/blob/master/lib/config.js?fbclid=IwAR1oq9JNOPYly-iWDrdTIZ1wrhwf3KhGKBOMAN2WKHgRwmYSGWxChaZ0f0o#L153-#L189
+ * - https://github.com/simov/grant/blob/e138c15413fae59aa4f61fefef161c4dd7816782/lib/consumer/koa2.js#L30-L63
+ * - https://github.com/simov/grant/blob/e138c15413fae59aa4f61fefef161c4dd7816782/lib/config.js#L153-#L189
  */
 
 const PROTOCOL = 'http'
