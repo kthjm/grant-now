@@ -19,7 +19,7 @@ require('dotenv/config')
 require('grant-now')({
   open: false,
   [provider]: {
-    token: '...',
+    key: '...',
     secret: '...',
   }
 })
